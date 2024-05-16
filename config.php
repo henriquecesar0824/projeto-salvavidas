@@ -1,12 +1,12 @@
 <?php
 
     $hostname = 'localhost';
-    $bancodedados = 'usuarios';
-    $usuario = ' root';
+    $bancodedados = 'clientes';
+    $usuario = 'root';
     $senha = '';
 
 
-    $mysqli = new mysqli($hostname,$usuario,$senha,$bancodedados);
+    $mysql = new mysqli($hostname,$usuario,$senha,$bancodedados);
 
     if ($mysqli->connect_errno)
     {
