@@ -1,13 +1,14 @@
 <?php
 
-    $dbHost = 'Localhost';
-    $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName = 'formulario-henrique';
+    $hostname = 'localhost';
+    $bancodedados = 'clientes';
+    $usuario = ' root';
+    $senha = '';
 
-    $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
-    if($conexao->connect_errno)
+    $mysqli = new mysqli($hostname,$usuario,$senha,$bancodedados);
+
+    if ($mysqli->connect_errno)
     {
         echo "Erro";
     }
