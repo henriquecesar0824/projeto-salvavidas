@@ -1,7 +1,7 @@
 <?php
 
     $hostname = 'localhost';
-    $bancodedados = 'clientes';
+    $bancodedados = 'usuarios';
     $usuario = ' root';
     $senha = '';
 
