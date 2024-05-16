@@ -1,6 +1,6 @@
 <?php
 
-    $dbHost = 'LocalHost';
+    $dbHost = 'Localhost';
     $dbUsername = 'root';
     $dbPassword = '';
     $dbName = 'formulario-henrique';
@@ -9,12 +9,12 @@
 
     if($conexao->connect_errno)
     {
-        echo 'erro';
+        echo "Erro";
     }
-        
-    
-    else{
-        echo 'sucesso';
+
+    else
+    {
+        echo "Conectado com sucesso";
     }
-        
+
 ?>
