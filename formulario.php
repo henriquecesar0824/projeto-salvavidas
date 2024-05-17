@@ -3,22 +3,33 @@
     if(isset($_POST['submit']))
     {
 
-        print_r('Nome :' . $_POST['nome']);
-        print_r('<br>');
-        print_r($_POST['email']);
-        print_r('<br>');
-        print_r($_POST['telefone']);
-        print_r('<br>');
-        print_r($_POST['familia']);
-        print_r('<br>');
-        print_r($_POST['data_nascimento']);
-        print_r('<br>');
-        print_r($_POST['cidade']);
-        print_r('<br>');
-        print_r($_POST['estado']);
-        print_r('<br>');
-        print_r($_POST['endereco']);
+        //print_r('Nome :' . $_POST['nome']);
+        //print_r('<br>');
+        //print_r($_POST['email']);
+        //print_r('<br>');
+        //print_r($_POST['telefone']);
+        //print_r('<br>');
+        //print_r($_POST['familia']);
+        //print_r('<br>');
+        //print_r($_POST['data_nascimento']);
+        //print_r('<br>');
+        //print_r($_POST['cidade']);
+        //print_r('<br>');
+        //print_r($_POST['estado']);
+        //print_r('<br>');
+        //print_r($_POST['endereco']);
+
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $telefone = $_POST['telefone'];
+        $familia = $_POST['familia'];
+        $data_nascimento = $_POST['data_nascimento'];
+        $cidade = $_POST['cidade'];
+        $estado = $_POST['estado'];
+        $endereco = $_POST['endereco'];
     }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -132,15 +143,15 @@
                 </div>
                 
                 <p>Voce deseja abrigar quantas familias?</p>
-                <input type="radio" name="familia" id="1familia" value="1familia">
-                <label for="1familia"><b> 1 familia</b></label>
+                <input type="radio" name="1" id="1" value="1">
+                <label for="1"><b> 1 </b></label>
                 <br><br>
                 
-                <input type="radio" name="familia" id="2familia" value="2familia">
-                <label for="2familia"><b> 2 familias</b></label>
+                <input type="radio" name="2" id="2" value="2">
+                <label for="2"><b> 2 </b></label>
                 <br><br>
-                <input type="radio" name="familia" id="3familia" value="3familia">
-                <label for="3familia"><b>3 Familias</b></label>
+                <input type="radio" name="3" id="3" value="3">
+                <label for="3"><b>3</b></label>
                 <br><br>
 
                 
