@@ -1,28 +1,24 @@
 <?php
 
-    if(isset($_POST['submit'])) {
+    if(isset($_POST['submit']))
+    {
 
-        print_r("Nome : " . $_POST['nome']);
-        print_r(['<br>']);
-        print_r("Email : " . $_POST['email']);
-        print_r(['<br>']);
-        print_r("Telefone : " . $_POST['telefone']);
-        print_r(['<br>']);
-        print_r("Familias : " . $_POST['familia']);
-        print_r(['<br>']);
-        print_r('Data de nascimento:'. $_POST['data_nascimento']);
-        print_r(['<br>']);
-        print_r('Cidade :'. $_POST['cidade']);
-        print_r(['<br>']);
-        print_r('Estado :'. $_POST['estado']);
-        print_r(['<br>']);
-        print_r('Endereço :'. $_POST['endereco']);
-
-
+        print_r($_POST['nome']);
+        print_r('<br>');
+        print_r($_POST['email']);
+        print_r('<br>');
+        print_r($_POST['telefone']);
+        print_r('<br>');
+        print_r($_POST['familia']);
+        print_r('<br>');
+        print_r($_POST['data_nascimento']);
+        print_r('<br>');
+        print_r($_POST['cidade']);
+        print_r('<br>');
+        print_r($_POST['estado']);
+        print_r('<br>');
+        print_r($_POST['endereco']);
     }
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -135,17 +131,16 @@
                     <label for="telefone" class = "labelInput"> Telefone</label>
                 </div>
                 
-                <p>Familias:</p>
-                <input type="radio" name="familia" id="familia" value="familia">
-                <label for="familia"><b>Consigo abrigar 1 Familia</b></label>
+                <p>Voce deseja abrigar quantas familias?</p>
+                <input type="radio" name="familia" id="1familia" value="1familia">
+                <label for="1familia"><b> 1 familia</b></label>
                 <br><br>
                 
-                <input type="radio" name="familia" id="familia" value="familia">
-                <label for="familia"><b>Consigo abrigar 2 familias</b></label>
+                <input type="radio" name="familia" id="2familia" value="2familia">
+                <label for="2familia"><b> 2 familias</b></label>
                 <br><br>
-                <input type="radio" 
-                name="familia" id="familia" value="familia">
-                <label for="familia"><b>Consigo abrigar 3 ou mais Familias</b></label>
+                <input type="radio" name="familia" id="3familia" value="3familia">
+                <label for="3familia"><b>3 Familias</b></label>
                 <br><br>
 
                 
