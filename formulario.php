@@ -15,18 +15,22 @@
         //print_r('<br>');
         //print_r($_POST['cidade']);
         //print_r('<br>');
-        //print_r($_POST['estado']);
+        //nome//print_r($_POST['estado']);
         //print_r('<br>');
         //print_r($_POST['endereco']);
+
+        include_once('config.php');
 
         $nome = $_POST['nome'];
         $email = $_POST['email'];
         $telefone = $_POST['telefone'];
         $familia = $_POST['familia'];
-        $data_nascimento = $_POST['data_nascimento'];
+        $data_nasci = $_POST['data_nascimento'];
         $cidade = $_POST['cidade'];
         $estado = $_POST['estado'];
         $endereco = $_POST['endereco'];
+
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,data_nasci,cidade,estado,endereco) VALUES ($nome,$email,$telefone,$data_nasci,$cidade,$estado,$endereco)");
     }
 
 
@@ -143,14 +147,14 @@
                 </div>
                 
                 <p>Voce deseja abrigar quantas familias?</p>
-                <input type="radio" name="1" id="1" value="1">
+                <input type="radio" name="familia" id="1" value="1">
                 <label for="1"><b> 1 </b></label>
                 <br><br>
                 
-                <input type="radio" name="2" id="2" value="2">
+                <input type="radio" name="familia" id="2" value="2">
                 <label for="2"><b> 2 </b></label>
                 <br><br>
-                <input type="radio" name="3" id="3" value="3">
+                <input type="radio" name="familia" id="3" value="3">
                 <label for="3"><b>3</b></label>
                 <br><br>
 
