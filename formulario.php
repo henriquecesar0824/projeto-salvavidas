@@ -1,3 +1,29 @@
+<?php
+
+    if(isset($_POST['submit'])) {
+
+        print_r("Nome : " . $_POST['nome']);
+        print_r(['<br>']);
+        print_r("Email : " . $_POST['email']);
+        print_r(['<br>']);
+        print_r("Telefone : " . $_POST['telefone']);
+        print_r(['<br>']);
+        print_r("Familias : " . $_POST['familia']);
+        print_r(['<br>']);
+        print_r('Data de nascimento:'. $_POST['data_nascimento']);
+        print_r(['<br>']);
+        print_r('Cidade :'. $_POST['cidade']);
+        print_r(['<br>']);
+        print_r('Estado :'. $_POST['estado']);
+        print_r(['<br>']);
+        print_r('Endereço :'. $_POST['endereco']);
+
+
+    }
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -88,7 +114,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="formulario.php" method="post" autocomplete="on">
+        <form action="formulario.php" method="post">
             <fieldset>
                 <legend>
                     <b>Formulario para quem quer ajudar</b>
@@ -124,8 +150,8 @@
 
                 
                 <div >
-                    <label for="data-nascimento"> <b>Data de nascimento:</b></label>
-                    <input type="date" name="data-nascimento" id="data_nascimento"  required>
+                    <label for="data_nascimento"> <b>Data de nascimento:</b></label>
+                    <input type="date" name="data_nascimento" id="data_nascimento"  required>
                 </div>
                 <br><br>
 
@@ -146,7 +172,7 @@
                     <label for="endereco" class = "labelInput"> Endereco</label>
                 </div>
                 <br><br>
-                <input type="submit" value="Enviar" id="submit">
+                <input type="submit" value="Enviar" name="submit" id="submit">
             </fieldset>
         </form>
     </div>
