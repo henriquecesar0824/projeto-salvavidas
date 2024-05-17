@@ -3,7 +3,7 @@
     if(isset($_POST['submit']))
     {
 
-        print_r($_POST['nome']);
+        print_r('Nome :' . $_POST['nome']);
         print_r('<br>');
         print_r($_POST['email']);
         print_r('<br>');
