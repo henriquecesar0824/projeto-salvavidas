@@ -6,6 +6,7 @@
         //print_r('Nome :' . $_POST['nome']);
         //print_r('<br>');
         //print_r($_POST['email']);
+        print_r($_POST['senha']);
         //print_r('<br>');
         //print_r($_POST['telefone']);
         //print_r('<br>');
@@ -22,6 +23,7 @@
         include_once('config.php');
 
         $nome = $_POST['nome'];
+        $senha = $_POST['senha'];
         $email = $_POST['email'];
         $telefone = $_POST['telefone'];
         $familia = $_POST['familia'];
@@ -30,7 +32,7 @@
         $estado = $_POST['estado'];
         $endereco = $_POST['endereco'];
 
-        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,data_nasci,cidade,estado,endereco) VALUES ($nome,$email,$telefone,$data_nasci,$cidade,$estado,$endereco)");
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,senha,email,telefone,familia,data_nasci,cidade,estado,endereco) VALUES ('$nome','$senha','$email','$telefone','$familia','$data_nasci','$cidade','$estado','$endereco')");
     }
 
 
@@ -45,7 +47,7 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 85%;
-            background-image: linear-gradient(to right,rgb(20,147,220)rgb(17,54,71));
+            background-image: linear-gradient(to right,rgb(20,147,220),rgb(17,54,71));
             
         }
         .box{
@@ -124,6 +126,7 @@
     </style>
 </head>
 <body>
+    <a href="home.php">Voltar</a>
     <div class="box">
         <form action="formulario.php" method="post">
             <fieldset>
@@ -134,6 +137,11 @@
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
                     <label for="nome" class = "labelInput">Nome completo</label>
+                </div>
+                <BR></BR>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                    <label for="senha" class = "labelInput">Senha</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
