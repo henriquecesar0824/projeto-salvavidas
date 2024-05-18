@@ -9,7 +9,7 @@
             font-family: Arial, Helvetica, sans-serif;
             background-image:linear-gradient(to right,rgb(22,170,220), rgb(17,54,71)) ;
         }
-        .tela-login{
+        div{
             background-color: rgba(0,0,0,0.7);
             position: absolute;
             top: 50%;
@@ -37,14 +37,15 @@
 </head>
 <body>
     <a href="home.php">Voltar</a>
-    <div id="tela-login">
+    <div>
         <h1>Login</h1>
-         <form action="testlogin.php" method="post"></form>
+         <form action="testlogin.php" method="post">
         <input type="text" name="nome" id="nome" placeholder="nome">
         <br><br>
         <input type="password" name="senha" id="senha" placeholder="senha">
         <br><br>
         <input type="submit" value="Enviar" id="botao">
+        </form>
     </div>
 </body>
 </html>

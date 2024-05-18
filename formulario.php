@@ -122,8 +122,9 @@
         #submit:hover{
             background-image: linear-gradient(to right, rgb(0,80,172),
             rgb(80,19,195));
-        }
-    </style>
+    
+            }    
+        </style>
 </head>
 <body>
     <a href="home.php">Voltar</a>
@@ -154,17 +155,30 @@
                     <label for="telefone" class = "labelInput"> Telefone</label>
                 </div>
                 
-                <p>Voce deseja abrigar quantas familias?</p>
+                <p>O que você deseja abrigar?
                 <input type="radio" name="familia" id="1" value="1">
-                <label for="1"><b> 1 </b></label>
+                <label for="1" class = 'radio'><b> Um pet </b></label>
                 <br><br>
                 
                 <input type="radio" name="familia" id="2" value="2">
-                <label for="2"><b> 2 </b></label>
+                <label for="2" class = 'radio'><b> Uma pessoa nessecitada </b></label>
                 <br><br>
                 <input type="radio" name="familia" id="3" value="3">
-                <label for="3"><b>3</b></label>
+                <label for="3" class = 'radio'><b>os dois</b></label>
                 <br><br>
+
+                    O que você deseja doar? 
+                <input type="radio" name="familia" id="4" value="4">
+                <label for="4" class = 'radio'><b> Alimentos </b></label>
+                <br><br>
+                
+                <input type="radio" name="familia" id="5" value="5">
+                <label for="5" class = 'radio'><b> Produtos Higienicos</b></label>
+                <br><br>
+                <input type="radio" name="familia" id="6" value="6">
+                <label for="6" class = 'radio'><b>Os dois</b></label>
+                <br><br>
+                </p>
 
                 
                 <div >

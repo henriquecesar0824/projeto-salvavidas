@@ -31,7 +31,7 @@
 <body>
     <h1>Ajude o Rio Grande Do Sul</h1>
     <div class="box">
-        <a href="tela de login.html">Login</a>
+        <a href="login.php">Login</a>
         <a href="formulario.php">Cadastre-Se</a>
     </div>
 </body>
