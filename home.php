@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site SOS RS</title>
+    <link rel="shortcut icon" href="sos.png" type="image/x-icon">
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -21,18 +22,24 @@
             padding: 30px;
             border-radius: 30px;
         }
-        a{
+        .link{
             text-decoration: none;
             color: white;
             border: 3px solid dodgerblue;
+            border-radius: 4px;
+        }
+        .link:hover{
+            background-color: darkblue;
+            color: white;
+            transition: 0.4s;
         }
     </style>
 </head>
 <body>
     <h1>Ajude o Rio Grande Do Sul</h1>
     <div class="box">
-        <a href="login.php">Login</a>
-        <a href="formulario.php">Cadastre-Se</a>
+        <a class="link" href="login.php">Login</a>
+        <a class="link" href="formulario.php">Cadastre-Se</a>
     </div>
 </body>
 </html>

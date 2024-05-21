@@ -6,7 +6,8 @@
         //print_r('Nome :' . $_POST['nome']);
         //print_r('<br>');
         //print_r($_POST['email']);
-        print_r($_POST['senha']);
+        //print_r('<br>');
+        //print_r($_POST['senha']);
         //print_r('<br>');
         //print_r($_POST['telefone']);
         //print_r('<br>');
@@ -27,12 +28,13 @@
         $email = $_POST['email'];
         $telefone = $_POST['telefone'];
         $familia = $_POST['familia'];
+        $parente = $_POST['parente'];
         $data_nasci = $_POST['data_nascimento'];
         $cidade = $_POST['cidade'];
         $estado = $_POST['estado'];
         $endereco = $_POST['endereco'];
 
-        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,senha,email,telefone,familia,data_nasci,cidade,estado,endereco) VALUES ('$nome','$senha','$email','$telefone','$familia','$data_nasci','$cidade','$estado','$endereco')");
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,senha,email,telefone,familia,parente,data_nasci,cidade,estado,endereco) VALUES ('$nome','$senha','$email','$telefone','$familia','$parente','$data_nasci','$cidade','$estado','$endereco')");
     }
 
 
@@ -43,23 +45,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="shortcut icon" href="sos.png" type="image/x-icon">
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 85%;
+            font-size: 80%;
             background-image: linear-gradient(to right,rgb(20,147,220),rgb(17,54,71));
             
         }
         .box{
             color: white;
             position: absolute;
-            top:50%;
+            top: 70%;
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 15px;
-            width: 50%;
+            width: 40%;
             
         
 
@@ -87,7 +90,7 @@
             color: white;
             font-size: 15px;
             width: 100%;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
         .labelInput{
             position: absolute;
@@ -122,14 +125,13 @@
         #submit:hover{
             background-image: linear-gradient(to right, rgb(0,80,172),
             rgb(80,19,195));
-    
-            }    
-        </style>
+        }
+    </style>
 </head>
 <body>
     <a href="home.php">Voltar</a>
     <div class="box">
-        <form action="formulario.php" method="post">
+        <form action="home.php" method="post">
             <fieldset>
                 <legend>
                     <b>Formulario para quem quer ajudar</b>
@@ -155,7 +157,7 @@
                     <label for="telefone" class = "labelInput"> Telefone</label>
                 </div>
                 
-                <p>O que você deseja abrigar?
+                <p>O que você deseja abrigar?</p>
                 <input type="radio" name="familia" id="1" value="1">
                 <label for="1" class = 'radio'><b> Um pet </b></label>
                 <br><br>
@@ -167,18 +169,17 @@
                 <label for="3" class = 'radio'><b>os dois</b></label>
                 <br><br>
 
-                    O que você deseja doar? 
-                <input type="radio" name="familia" id="4" value="4">
+                    <p>O que você deseja doar? </p>
+                <input type="radio" name="parente" id="4" value="4">
                 <label for="4" class = 'radio'><b> Alimentos </b></label>
                 <br><br>
                 
-                <input type="radio" name="familia" id="5" value="5">
+                <input type="radio" name="parente" id="5" value="5">
                 <label for="5" class = 'radio'><b> Produtos Higienicos</b></label>
                 <br><br>
-                <input type="radio" name="familia" id="6" value="6">
+                <input type="radio" name="parente" id="6" value="6">
                 <label for="6" class = 'radio'><b>Os dois</b></label>
                 <br><br>
-                </p>
 
                 
                 <div >
@@ -204,7 +205,7 @@
                     <label for="endereco" class = "labelInput"> Endereco</label>
                 </div>
                 <br><br>
-                <input type="submit" value="Enviar" name="submit" id="submit">
+                <input type="submit" value="Enviar" name="submit" id="submit" required>
             </fieldset>
         </form>
     </div>
