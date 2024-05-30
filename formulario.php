@@ -131,7 +131,7 @@
 <body>
     <a href="home.php">Voltar</a>
     <div class="box">
-        <form action="home.php" method="post">
+        <form action="login.php" method="post">
             <fieldset>
                 <legend>
                     <b>Formulario para quem quer ajudar</b>
@@ -205,7 +205,7 @@
                     <label for="endereco" class = "labelInput"> Endereco</label>
                 </div>
                 <br><br>
-                <input type="submit" value="Enviar" name="submit" id="submit" required>
+                <input type="submit" value="Enviar" name="submit" id="submit"  required>
             </fieldset>
         </form>
     </div>
